@@ -1,5 +1,15 @@
 <!DOCTYPE html>
 <html>
+
+ <head>
+ <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+ <title>
+Ajout d'un pin's
+ </title>
+ <link rel="stylesheet" type="text/css" href="BDDPins_admin_add_rub.css" media="all" />
+ 
+>
+
 <?php
 $connection = mysql_connect("localhost","root","root");
 	$database = mysql_select_db("Pins");

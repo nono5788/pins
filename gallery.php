@@ -20,7 +20,7 @@
  <div class="nav"> 
     <div id="banniere_image">  
        <a href="Form.php" class="bouton_rouge">Ajout pin's <img src="images/flecheblanchedroite.png" alt="" /></a>
-       <a href="Form.php" class="bouton_rub">Ajout rubrique <img src="images/flecheblanchedroite.png" alt="" /></a>   
+       <a href="BDDPins_admin_add_rub.php" class="bouton_rub">Ajout rubrique <img src="images/flecheblanchedroite.png" alt="" /></a>   
     </div>
   </div>
     <br><br>
