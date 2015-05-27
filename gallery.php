@@ -11,16 +11,16 @@
 <body>
 <header>
     <div class="entete">
-        <h1><img src="images/Mickey1.png" alt="" height="70"/>Ma collection de pin's Disney en ligne   
-        <img src="images/Mickey1.png" alt="" height="70" /></h1> 
+        <h1><img src="Images/Mickey1.png" alt="" height="70"/>Ma collection de pin's Disney en ligne   
+        <img src="Images/Mickey1.png" alt="" height="70" /></h1> 
     </div>
 </header>
 
  <!--Bannière-->   
  <div class="nav"> 
     <div id="banniere_image">  
-       <a href="Form.php" class="bouton_rouge">Ajout pin's <img src="images/flecheblanchedroite.png" alt="" /></a>
-       <a href="BDDPins_admin_add_rub.php" class="bouton_rub">Ajout rubrique <img src="images/flecheblanchedroite.png" alt="" /></a>   
+       <a href="Form.php" class="bouton_rouge">Ajout pin's <img src="Images/flecheblanchedroite.png" alt="" /></a>
+       <a href="BDDPins_admin_add_rub.php" class="bouton_rub">Ajout rubrique <img src="Images/flecheblanchedroite.png" alt="" /></a>   
     </div>
   </div>
     <br><br>
