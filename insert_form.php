@@ -1,7 +1,10 @@
 <?php
  
+//free $connection = mysql_connect("sql.free.fr","pinsdineydev","Ines@2001");
 $connection = mysql_connect("localhost","root","root");
-$database = mysql_select_db("Pins"); 
+//Free $database = mysql_select_db("pinsdineydev"); 
+$database = mysql_select_db("Pins");
+
 $Date = date("Y-m-d");
 $Time = date("H:i:s"); 
 

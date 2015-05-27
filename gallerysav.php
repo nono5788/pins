@@ -43,7 +43,6 @@
         // on envoie la requête
          $req = mysql_query($sql) or die('Erreur SQL !<br>'.$sql.'<br>'.mysql_error());
         
-         
          // on fait une boucle qui va faire un tour pour chaque enregistrement , en gros tant qu'il y aura encore un Pin's dans la table
          while($data = mysql_fetch_assoc($req))
          {

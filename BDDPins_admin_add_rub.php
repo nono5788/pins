@@ -11,8 +11,11 @@ Ajout d'un pin's
 >
 
 <?php
-$connection = mysql_connect("localhost","root","root");
-	$database = mysql_select_db("Pins");
+   /*Connection à la base de donnée*/
+         include "config.php";
+         include "database.fn.php";
+         $link = database_connect($db);
+         $dir = 'Photos/';
 ?>
     
 

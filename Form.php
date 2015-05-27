@@ -36,7 +36,7 @@ Ajout d'un pin's
  
     /*Tu éxecute ta requete et tu place le resultat dans une autre variable*/
     $resultat = mysql_query($requete);
- ?>
+        ?>
         
         <select name="lst_rub"> 
                 <?php         
