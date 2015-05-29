@@ -9,21 +9,17 @@ and open the template in the editor.
     <meta charset="utf-8" />
     <title>Pin's Disney</title>
     <link rel="stylesheet" href="Formvisu.css" />
-        <title></title>
+    <title>Visualisation d'un pin's</title>
     </head>
-    
+    <body>
     <header>
         <div class="entete">
             <h1>Visualisation d'un pin's</h1>  
         </div>
     </header>    
     
-    
-    
-    
-    <body>
-        <?php
-        
+        <div class="form">
+        <?php        
          extract($_GET,EXTR_OVERWRITE);
          include "config.php";
          include "database.fn.php";
@@ -40,14 +36,29 @@ and open the template in the editor.
          while($data = mysql_fetch_assoc($req))
          {
          // on affiche les informations de l'enregistrement en cours-->
-         echo "<li> Nom du pin's : ".$data['img_name']."</li>";
+         echo "<li><strong> Nom du pin's : </strong>".$data['img_name']."</li>";
+         echo"</br>";
+         // on crée la requête SQL 
+         $sql1 = "SELECT * FROM rubrique where id = '".$data['img_rub']."'";  
+         // on envoie la requête
+         $req1 = mysql_query($sql1) or die('Erreur SQL !<br>'.$sql1.'<br>'.mysql_error());
+         while($data1 = mysql_fetch_assoc($req1))
+         {        
+         echo "<li><strong>Catégorie du pin's :</strong> ".$data1['rub_name']."</li>";
+         }
+         echo"</br>";
 
-         echo "<li> Descriptions du pin's : <TEXTAREA NAME=\"Description\" COLS=\"50\" ROWS=\"3\" style=\"text-align:left;\">".$data['img_desc']."</TEXTAREA></li></B>";
-         //echo "<TEXTAREA NAME=\"Description\" COLS=\"75\" ROWS=\"3\" style=\"text-align:left;\">".$data['img_desc']."</TEXTAREA></B>";
+         
+         echo "<li><strong> Descriptions du pin's : </strong>";
+         echo "</br>";
+         echo "<TEXTAREA NAME=\"Description\" COLS=\"50\" ROWS=\"3\" style=\"text-align:left;\">".$data['img_desc']."</TEXTAREA></li></B>";
+         //echo "<li><strong> Descriptions du pin's : </strong> <TEXTAREA NAME=\"Description\" COLS=\"50\" ROWS=\"3\" style=\"text-align:left;\">".$data['img_desc']."</TEXTAREA></li></B>";
+         echo"</br>";
+         echo"</br>";
          echo "<img src= 'Photos\\".$data['img_photo']."' width=250 height=200 />";
          }
          ?>
-        
+        </div>
     <div id="banniere_image">  
         <a href="gallery.php" class="bouton_rouge">Quitter <img src="Images/flecheblanchedroite.png" alt="" /></a>
     </div>

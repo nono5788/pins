@@ -1,9 +1,9 @@
 <?php
  
-$connection = mysql_connect("sql.free.fr","pinsdineydev","Ines@2001");
-//$connection = mysql_connect("localhost","root","root");
-$database = mysql_select_db("pinsdineydev"); 
-//$database = mysql_select_db("Pins");
+//$connection = mysql_connect("sql.free.fr","pinsdineydev","Ines@2001");
+$connection = mysql_connect("localhost","root","root");
+//$database = mysql_select_db("pinsdineydev"); 
+$database = mysql_select_db("Pins");
          //include "config.php";
          //include "database.fn.php";
          //$link = database_connect($db);

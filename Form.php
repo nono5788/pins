@@ -57,11 +57,10 @@ Ajout d'un pin's
         </select>
  
  </li>
-     <p><span> <label>Nom du pin's  </label><input id="nom" name="nom" class="element text long" type="text" maxlength="255" value="" /></span></p>
- <li><p><span> <label>Description   </label><input id="desc" name="desc" class="element text long" type="text" maxlength="255" value=""/></span></p>
- <spa
-
- 
+ <li><p><span> <label>Nom du pin's : </label><input id="nom" name="nom" class="element text long" type="text" maxlength="255" value="" /></span></p>
+ <li><p><span><label> Description : </label>
+  </br>
+  <textarea COLS="50" ROWS="3" id="desc" name="desc" value=""/></textarea></span> </p>
  </li>
  <li>
  <label for="image"> Ajoute une photo de ton pin's: </label>
