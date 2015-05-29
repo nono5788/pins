@@ -48,7 +48,8 @@
          while($data = mysql_fetch_assoc($req))
          {
          // on affiche les informations de l'enregistrement en cours
-         echo "<a href= Photos\\".$data['img_photo']."><img src= 'Photos\\".$data['img_photo']."' width=150 height=100 />";
+         //echo "<a href= Photos\\".$data['img_photo']."><img src= 'Photos\\".$data['img_photo']."' width=150 height=100 />";
+         echo "<a href= Formvisu.php?ident=".$data['img_photo']."><img src= 'Photos\\".$data['img_photo']."' width=150 height=100 />";
          echo "</div>";
          } ;
          echo "<div class='spacer'></div>";

@@ -1,0 +1,41 @@
+/**************************************************/
+/********************CSS MENU**********************/
+/**************************************************/
+
+
+/*definition du fond de page*/
+body
+{
+        background: url('Images/Mickey.jpg')no-repeat center fixed;
+	-webkit-background-size: cover; /* pour anciens Chrome et Safari */
+	background-size: cover; /* version standardisée */;
+	font-family: 'Trebuchet MS', Arial, sans-serif;
+	text-align: left;
+	margin-top: 250px;
+	margin-left: 150px;
+        color: white
+}
+
+#form
+{
+  vertical-align:middle;
+  display:inline-block;
+  line-height:normal; /* on rétablit le line-height */
+  text-align:left; /* ... et l'alignement du texte */	
+}
+
+.bouton_rouge
+{
+    display: inline-block;
+    height: 25px;
+    position: absolute;
+    right: 5px;
+    bottom: 5px;
+    background: url('Images/fond_degraderouge.png') repeat-x;
+    border: 1px solid #760001;
+    border-radius: 5px;
+    font-size: 1.2em;
+    text-align: center;
+    padding: 3px 8px 0px 8px;
+    color: white;
+    text-decoration: none;

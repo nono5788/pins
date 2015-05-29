@@ -1,9 +1,12 @@
 <?php
  
-//free $connection = mysql_connect("sql.free.fr","pinsdineydev","Ines@2001");
-$connection = mysql_connect("localhost","root","root");
-//Free $database = mysql_select_db("pinsdineydev"); 
-$database = mysql_select_db("Pins");
+$connection = mysql_connect("sql.free.fr","pinsdineydev","Ines@2001");
+//$connection = mysql_connect("localhost","root","root");
+$database = mysql_select_db("pinsdineydev"); 
+//$database = mysql_select_db("Pins");
+         //include "config.php";
+         //include "database.fn.php";
+         //$link = database_connect($db);
 
 $Date = date("Y-m-d");
 $Time = date("H:i:s"); 
@@ -18,7 +21,7 @@ $desc = $_POST['desc'];
 //******* On renomme l'image de manière aléatoire pour éviter un conflit dans le dossier (2 fois le même nom par exemple
 $dir = 'Photos/';
 $ext = strtolower( pathinfo($_FILES['image']['name'], PATHINFO_EXTENSION) );
-$file=uniqid().'.'.$ext;
+$file = uniqid('pho_').'.'.$ext;
  
  //**** on bouge l'image
 move_uploaded_file($_FILES['image']['tmp_name'], $dir.$file);
