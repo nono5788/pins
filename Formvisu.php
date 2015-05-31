@@ -38,17 +38,22 @@ and open the template in the editor.
          // on affiche les informations de l'enregistrement en cours-->
          echo "<li><strong> Nom du pin's : </strong>".$data['img_name']."</li>";
          echo"</br>";
+         //echo "<li><strong>ID du pin's :</strong> ".$data['img_id']."</li>";
+
+         //on affecte l'id à la variable var1
+         $var1=$data['img_id'];
+
+         
          // on crée la requête SQL 
          $sql1 = "SELECT * FROM rubrique where id = '".$data['img_rub']."'";  
+
          // on envoie la requête
          $req1 = mysql_query($sql1) or die('Erreur SQL !<br>'.$sql1.'<br>'.mysql_error());
          while($data1 = mysql_fetch_assoc($req1))
          {        
          echo "<li><strong>Catégorie du pin's :</strong> ".$data1['rub_name']."</li>";
          }
-         echo"</br>";
-
-         
+         echo"</br>";   
          echo "<li><strong> Descriptions du pin's : </strong>";
          echo "</br>";
          echo "<TEXTAREA NAME=\"Description\" COLS=\"50\" ROWS=\"3\" style=\"text-align:left;\">".$data['img_desc']."</TEXTAREA></li></B>";
@@ -59,8 +64,15 @@ and open the template in the editor.
          }
          ?>
         </div>
-    <div id="banniere_image">  
-        <a href="gallery.php" class="bouton_rouge">Quitter <img src="Images/flecheblanchedroite.png" alt="" /></a>
-    </div>
-    </body>
+ <div class="nav">         
+    <div id="banniere_image">   
+        <a href="gallery.php" class="bouton_rouge">Quitter <img src="Images/flecheblanchedroite.png" alt=""/></a> 
+        <?php
+        echo "<a href=delete.php?id1=$var1 class=\"bouton_del\">Suppression <img src=\"Images/flecheblanchedroite.png\" alt=\"\"/></a>";
+        mysql_close($link);
+        ?> 
+    </div>   
+ </div>
+ </body>
 </html>
+echo "<a href= Formvisu.php?ident=".$data['img_photo'].">
