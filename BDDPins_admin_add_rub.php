@@ -21,7 +21,7 @@ Ajout d'un pin's
 
 
 <form action="BDDPins_admin_add_rub.php" enctype="multipart/form-data" 
-	method="post"> 
+	method="post"/> 
 	Nom:<br/> 
 	<input type="text" name="frm_rub_name" size="50"/> 
 	<br/><br/>
